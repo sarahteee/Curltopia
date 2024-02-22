@@ -1,0 +1,16 @@
+extends layout 
+
+block layout-content
+    section.hero 
+        .hero-text
+            h1 SUPPORTING CURLY GIRLS EVERYWHERE
+        .hero-image
+            img(src="images/heroimage.png", alt="woman with curly hair") 
+        //- https://siliconvalleymedspa.com/vitalize-peel/
+    section.newsletter
+        .newsletter-content
+            h2 JOIN OUR SHOPPING COMMUNITY TO GET MONTHLY PROMOS
+            p Enter your email down below!
+            form.newsletter-form(action='/' method='POST')
+                input(type='text' name='email' placeholder='Enter your email here')
+                button(type='submit') SEND

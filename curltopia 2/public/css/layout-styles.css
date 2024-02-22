@@ -1,0 +1,149 @@
+/* GENERAL */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 50px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #aaa;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .brand-column h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer .brand-column p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer .social-icons a img {
+    height: 24px;
+    margin-right: 10px;
+}
+
+.footer .links-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer .links-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .links-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer .links-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .links-column ul li a:hover {
+    color: #aaa;
+}
+
+/* ------------ MEDIA QUERIES TABLET ------------  */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .menu a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .brand-column {
+        margin-bottom: 20px;
+    }
+
+    .footer .links-column {
+        margin-bottom: 20px;
+    }
+
+    .footer .social-icons a img {
+        margin: 5px;
+    }
+}
+
+/* ------------ MEDIA QUERIES PHONE ------------  */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu a {
+        display: block;
+        margin: 5px;
+        align-items: center;
+    }
+
+    .footer .brand-column h2 {
+        font-size: 16px;
+    }
+
+    .footer .links-column h3 {
+        font-size: 16px;
+    }
+
+    .footer .brand-column p {
+        font-size: 12px;
+    }
+
+    .footer .links-column ul li a {
+        font-size: 12px;
+    }
+}

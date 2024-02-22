@@ -1,0 +1,24 @@
+extend layout 
+
+block append scripts 
+    script(src="/js/signup.js")
+
+block layout-content 
+    section.signup
+        .signup-container
+            h1 JOIN THE CURLTOPIA COMMUNITY
+            h2 CREATE AN ACCOUNT
+            form.signup-form(action='/' method='POST')
+                .form-group
+                    label(for='fullName') Full Name:
+                    input#fullName(type='text' name='fullName')
+                .form-group
+                    label(for='email') Email:
+                    input#email(type='email' name='email')
+                .form-group
+                    label(for='password') Password:
+                    input#password(type='password' name='password')
+                button(type='submit') Create Account
+            .login-link
+                p Already have an account? 
+                a(href='/login') Login

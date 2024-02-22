@@ -1,0 +1,25 @@
+/* ADMIN */
+
+table {
+    width: 60%;
+    margin: 50px;
+}
+
+th {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+button {
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+}

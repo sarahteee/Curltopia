@@ -1,0 +1,20 @@
+extend layout 
+
+block layout-content 
+    .content 
+        h1.page-title Add New Product 
+        form(method="post", action="/admin/shop/add/submit")
+            div 
+                .form-add
+                    label(for='productName') Product Name:
+                    input(type='text' name='productName', id='product-name')
+                .form-add
+                    label(for='price') Price:
+                    input(type='number', min='0', name='price', id='product-price')
+                .form-add
+                    label(for='type') Product Type:
+                    input(type='text' name='type', id='product-type')
+                .form-add
+                    label(for='image') Image:
+                    input(type='file' name='image', id='product-image')
+                button(type='submit') Add Product

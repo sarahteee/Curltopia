@@ -1,0 +1,32 @@
+extend layout 
+
+block append scripts 
+    script(src="/js/shop.js")
+
+block layout-content 
+    section.shop
+        nav.menu-bar
+            ul.menu-list
+                li.menu-item
+                    a(href='/') SHAMPOO
+                li.menu-item
+                    a(href='/') CONDITIONER
+                li.menu-item
+                    a(href='/') TREATMENTS
+                li.menu-item
+                    a(href='/') STYLING
+        h2 NEW ARRIVALS
+        .product-container
+            each product in items
+                .product
+                    img(src=product.image alt=product.productName)
+                    h3.product-name= product.productName
+                    span.product-price= `$${product.price}`
+                    //-product images
+                    //-https://ashampoo.ca/cdn/shop/products/shampoo_green_8oz_1_62a72beb-5da9-4f26-9ffc-85c4c752190a.png?v=1652681143
+                    //-https://ashampoo.ca/cdn/shop/products/conditioner_white_8oz_1.png?v=1652681306&width=1946
+                    //-https://subrina.ca/cdn/shop/files/slike_600_x_HAIR_GEL.png?v=1684337344
+                    //-https://assets.unileversolutions.com/v1/58143937.png
+                    //-https://salonkokoro.ca/wp-content/uploads/2023/01/Mousse-Curl-Ideal-Discipline-150ml-01-Kerastase.png
+                    //-https://www.richhaircare.com/wp-content/uploads/2023/03/ultimate-moisture-hair-mask.png
+                    

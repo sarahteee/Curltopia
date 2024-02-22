@@ -1,0 +1,22 @@
+extend layout 
+
+block layout-content 
+    h1.page-title Administer menu 
+    a(href="/admin/shop/add/submit") + Add New Product 
+    table 
+        thead 
+            tr 
+                th Product
+                th Price
+                th Type
+                th Operation 
+        tbody 
+            each product in items
+                tr 
+                    td #{product.productName}
+                    td #{product.price}
+                    td #{product.type}
+                    td
+                        form(action="/admin/shop/delete")
+                            input(type="hidden", name="productId", value=product._id)
+                            button(type="submit") Delete

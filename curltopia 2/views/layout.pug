@@ -1,0 +1,57 @@
+doctype html
+html 
+    head 
+        meta(charset="utf-8")
+        title #{title} | CURLTOPIA 
+        link(rel="stylesheet", type="text/css", href="/css/layout-styles.css")
+        link(rel="stylesheet", type="text/css", href="/css/index-styles.css")
+        link(rel="stylesheet", type="text/css", href="/css/signup-styles.css")
+        link(rel="stylesheet", type="text/css", href="/css/shop-styles.css")
+        link(rel="stylesheet", type="text/css", href="/css/create-styles.css")
+        link(rel="stylesheet", type="text/css", href="/css/admin-styles.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        block scripts 
+            script(src="/js/layout.js")
+    body 
+        header.navbar
+            div.logo 
+                a(href='/') CURLTOPIA 
+            nav.menu
+                a(href='/Home') HOME
+                a(href='/Shop') SHOP
+                a(href='/About') ABOUT
+                a(href='/SignUp') SIGN UP 
+        main#main 
+            block layout-content
+        footer.footer
+            div.brand-column
+                h2 HAIRCARE
+                p Complete your hair routine with awesome products from us.
+                div.social-icons
+                    a(href='https://facebook.com') 
+                    img(src='/images/fb.png', width='20', alt='Facebook')
+                    a(href='https://instagram.com') 
+                    img(src='/images/insta.png', width='20', alt='Instagram')
+                    a(href='https://twitter.com') 
+                    img(src='/images/x.png', width='20', alt='Twitter')
+                    //- All social media icons from: https://www.figma.com/file/5NRw3OrYHq9b89rRNrzOro/Social-Media-Icons-(Community)?type=design&node-id=17-23&mode=design&t=27OpH31SsSNqVKs6-0
+            div.links-column
+                h3 Company
+                ul
+                    li: a(href='/about') About
+                    li: a(href='/contact') Contact us
+                    li: a(href='/support') Support
+                    li: a(href='/careers') Careers
+            div.links-column
+                h3 Quick Links
+                ul
+                    li: a(href='/location') Locations
+                    li: a(href='/tracking') Order Tracking
+                    li: a(href='/product-guide') Product Guide
+                    li: a(href='/faqs') FAQs
+            div.links-column
+                h3 Legal
+                ul
+                    li: a(href='/terms') Terms & conditions
+                    li: a(href='/privacy') Privacy Policy

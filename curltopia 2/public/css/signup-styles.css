@@ -1,0 +1,102 @@
+/* SIGNUP */
+.signup {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.signup-container h1 {
+    background-color: #dc99b7;
+    color: black;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.signup-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form .form-group label {
+    margin: 10px;
+}
+
+.signup-form .form-group input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    background-color: #dc99b7;
+    color: black;
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.signup-form button:hover {
+    background-color: #dc99b7;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #dc99b7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ------------ MEDIA QUERIES TABLET ------------  */
+@media only screen and (max-width: 768px) {
+
+    .signup-container h1 {
+        font-size: 1.8em;
+        padding: 15px;
+    }
+
+    .signup-container h2 {
+        font-size: 1.8em;
+        padding: 15px;
+    }
+}
+
+/* ------------ MEDIA QUERIES PHONE ------------  */
+@media only screen and (max-width: 480px) {
+
+    .signup-container h1 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .signup-container h2 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .signup-form .form-group label {
+        display: block;
+        margin: 10px;
+    }
+
+    .signup-form button {
+        padding: 15px;
+    }
+
+    .login-link p {
+        font-size: 0.9em;
+    }
+
+    .login-link a {
+        font-size: 0.9em;
+    }
+}

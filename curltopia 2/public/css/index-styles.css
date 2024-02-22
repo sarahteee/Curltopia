@@ -1,0 +1,147 @@
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eae8e8;
+    border-radius: 60px;
+    margin: 30px;
+}
+
+.hero-text {
+    flex-basis: 20%;
+    color: #dc99b7;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 3px 3px 2px #6c4857;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 5em;
+}
+
+.hero-image {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    background-color: #dc99b7;
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.newsletter-content p {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.newsletter-form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+/* ------------ MEDIA QUERIES TABLET ------------  */
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 30px;
+        margin: 20px;
+
+    }
+
+    .hero-text {
+        flex-basis: auto;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .hero-image {
+        flex-basis: auto;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+    }
+
+    .newsletter-content h2 {
+        font-size: 1.5em;
+    }
+
+    .newsletter-content p {
+        font-size: 1.2em;
+    }
+
+    .newsletter-form input {
+        font-size: 1em;
+    }
+
+    .newsletter-form button {
+        font-size: 1em;
+    }
+}
+
+/* ------------ MEDIA QUERIES PHONE ------------  */
+@media only screen and (max-width: 480px) {
+    .hero-text {
+        padding: 10px;
+        text-align: center;
+        font-size: 0.5em;
+        flex-basis: auto;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+        flex-basis: auto;
+        justify-content: center;
+    }
+
+    .newsletter-content h2 {
+        font-size: 1em;
+    }
+
+    .newsletter-content p {
+        font-size: 1em;
+    }
+
+    .newsletter-form input {
+        font-size: 0.8em;
+    }
+
+    .newsletter-form button {
+        font-size: 0.8em;
+    }
+}
